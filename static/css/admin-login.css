@@ -1,0 +1,45 @@
+.login-hero {
+  max-width: 420px;
+  margin: 0 auto 18px;
+  padding: 18px 20px;
+  border-radius: 8px;
+  background: #1f6f8b;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+}
+
+.login-hero h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.login-hero p {
+  margin: 8px 0 0;
+  opacity: 0.95;
+}
+
+.login-hero .meta {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.login-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.login-footer p {
+  margin: 0;
+}
+
+.login-page-title {
+  text-align: center;
+  margin: 0 0 16px;
+  color: #1f6f8b;
+  font-size: 1.6rem;
+}
