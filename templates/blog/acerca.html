@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block content %}
+
+<!-- Encabezado -->
+<header class="text-center mb-5 pb-4 border-bottom">
+  <p class="text-uppercase text-muted small mb-2">Blog · Curso Python</p>
+  <h1 class="display-5 fw-bold text-primary">Acerca de nosotros</h1>
+  <p class="lead text-secondary col-lg-8 mx-auto mt-3">
+    Un espacio para aprender Django, construir proyectos reales y compartir lo que vamos descubriendo en el camino.
+  </p>
+</header>
+
+<!-- Misión + imagen placeholder -->
+<div class="row align-items-center g-4 mb-5">
+  <div class="col-lg-6">
+    <h2 class="h4 fw-semibold mb-3">Nuestra misión</h2>
+    <p class="text-body-secondary">
+      Este sitio nació como parte del curso de Python con Django. La idea es practicar vistas,
+      templates, URLs y poco a poco ir sumando funcionalidades: posts, formularios, usuarios y más.
+    </p>
+    <p class="text-body-secondary mb-0">
+      Si estás empezando, lo importante no es tener un diseño perfecto, sino entender cómo
+      Django conecta cada pieza: <strong>url → vista → template → respuesta HTML</strong>.
+    </p>
+  </div>
+  <div class="col-lg-6">
+    <div class="bg-light border rounded-3 d-flex align-items-center justify-content-center"
+         style="min-height: 220px;">
+      <span class="text-muted">Imagen o logo del proyecto</span>
+    </div>
+  </div>
+</div>
+
+<!-- Valores / pilares -->
+<section class="mb-5">
+  <h2 class="h4 fw-semibold text-center mb-4">Qué encontrarás aquí</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center">
+          <div class="display-6 text-primary mb-2">📚</div>
+          <h3 class="h6 card-title">Aprendizaje</h3>
+          <p class="card-text text-body-secondary small mb-0">
+            Ejercicios y notas del curso, paso a paso, sin saltar conceptos básicos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center">
+          <div class="display-6 text-primary mb-2">🛠️</div>
+          <h3 class="h6 card-title">Práctica</h3>
+          <p class="card-text text-body-secondary small mb-0">
+            Código en un proyecto Django real: templates, estáticos y rutas incluidas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center">
+          <div class="display-6 text-primary mb-2">🚀</div>
+          <h3 class="h6 card-title">Evolución</h3>
+          <p class="card-text text-body-secondary small mb-0">
+            De “Hola Mundo” a un blog con contenido, estilos y buenas prácticas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Datos rápidos -->
+<section class="bg-light rounded-3 p-4 mb-5">
+  <div class="row text-center g-3">
+    <div class="col-6 col-md-3">
+      <p class="h3 fw-bold text-primary mb-0">2026</p>
+      <p class="small text-muted mb-0">Año del proyecto</p>
+    </div>
+    <div class="col-6 col-md-3">
+      <p class="h3 fw-bold text-primary mb-0">Django</p>
+      <p class="small text-muted mb-0">Framework backend</p>
+    </div>
+    <div class="col-6 col-md-3">
+      <p class="h3 fw-bold text-primary mb-0">Bootstrap</p>
+      <p class="small text-muted mb-0">Estilos vía CDN</p>
+    </div>
+    <div class="col-6 col-md-3">
+      <p class="h3 fw-bold text-primary mb-0">Python</p>
+      <p class="small text-muted mb-0">Lenguaje base</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto / CTA -->
+<section class="card shadow-sm border-0 mb-4">
+  <div class="card-body text-center py-4">
+    <h2 class="h5 card-title">¿Tienes dudas o sugerencias?</h2>
+    <p class="card-text text-body-secondary mb-3">
+      Este es un proyecto de aprendizaje. Puedes adaptar los textos, quitar secciones o añadir las tuyas.
+    </p>
+    <a href="{% url 'saludo' %}" class="btn btn-outline-primary me-2">Volver al inicio</a>
+    <a href="{% url 'admin:index' %}" class="btn btn-primary">Admin</a>
+  </div>
+</section>
+
+{% endblock %}
